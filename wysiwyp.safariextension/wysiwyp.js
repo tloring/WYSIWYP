@@ -5,8 +5,8 @@ function wysiwyp()
   for (var i=0; i<links.length; i++) 
   {
     if ( links[i].rel.toLowerCase() == "stylesheet" ) { // just stylesheets
-      if ( links[i].media != '' ) {
-        links[i].media += ",print";
+      if ( links[i].media != null ) {
+        links[i].media = "all";
       }
     }
   }
